@@ -40,6 +40,16 @@ class ViewController: UIViewController {
     //On changing the tip percentage, recalculate values
     @IBAction func changeTip(sender: AnyObject) {
         calculateAllFields()
+        
+        let tipPercentageVal = round(Double(tipSelector.value))
+        
+        if (tipPercentageVal < 15){
+            tipPercentageLabel.textColor = UIColor.redColor()
+        } else if (tipPercentageVal < 20) {
+            tipPercentageLabel.textColor = UIColor.yellowColor()
+        } else {
+           tipPercentageLabel.textColor = UIColor.greenColor()
+        }
     }
     
     //On changing the number of ways to split, recalculate values
