@@ -8,5 +8,5 @@ Required and optional stories completed?
   [-] You can split the total bill as many ways as you like using a UIStepper object
   [-] Structurally, the code uses a common function that calculates all values - this function is called whenever the user changes the bill, tip, or number of splits.
 GIF demo:
-  To be created
+  http://imgur.com/fQNTn8s
   
