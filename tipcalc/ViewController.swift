@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         
         let tipPercentageVal = round(Double(tipSelector.value))
         
+        //Color Code the tip percentage
         if (tipPercentageVal < 15){
             tipPercentageLabel.textColor = UIColor.redColor()
         } else if (tipPercentageVal < 20) {
