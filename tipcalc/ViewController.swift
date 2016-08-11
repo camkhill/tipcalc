@@ -92,6 +92,13 @@ class ViewController: UIViewController {
     @IBAction func onTapAnywhere(sender: AnyObject) {
         view.endEditing(true)
     }
+    
+    //When tapping the "How much should I tip?" button, link to a tipping guide website
+    @IBAction func onTapHelp(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://money.usnews.com/money/personal-finance/articles/2013/05/16/your-ultimate-tipping-guide")!)
+        
+    }
 
 }
 
